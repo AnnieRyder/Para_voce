@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <link rel="stylesheet" href="stylerespon.css">
+        <title>Amor</title>
+
+        <style>
+            body {
+                background-color: black;
+            }
+
+            .painel {
+                margin: auto;
+                background-color: white;
+                width: 500px;
+                height: 500px;
+                border-radius: 20px;
+                text-align: center;
+                padding-top: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            #sim {
+                height: 40px;
+                width: 60px;
+                background-color: red;
+                border: 2px solid white;
+                border-radius: 10px;
+                color: white;
+                margin-left: -70px;
+            }
+
+            #não{
+                position: absolute;
+                height: 40px;
+                width: 60px;
+                background-color: red;
+                border: 2px solid white;
+                border-radius: 10px;
+                color: white;
+                margin-left: 10px;
+                z-index: 9999999;
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="painel">
+            <h1> Você me ama mesmo?</h1>
+           
+
+            <button style="cursor: pointer" onclick="handleYesClick()" id="sim"> Sim!</button>
+            <button style="cursor: pointer" onmousemove="fuja()" id="não"> Não!</button>
+
+<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+        src="https://giphy.com/embed/YWLDUhxMbpPfY831Fn" width="100%" height="100%" style="position:absolute"
+        frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+<p><a href="https://giphy.com/gifs/SpiderVerseMovie-marvel-spiderman-sony-YWLDUhxMbpPfY831Fn"></a></p>
+        </div>
+
+      <script>
+function fuja() {
+  var botaoNao = document.getElementById("não")
+
+  var larguraJanela = window.innerWidth;
+  var alturaJanela = window.innerHeight;
+
+  var maxX = larguraJanela - botaoNao.offsetWidth;
+  var maxY = alturaJanela - botaoNao.offsetHeight;
+
+  var aleatorioX = Math.floor(Math.random() * (maxX - 100) + 100);
+  var aleatorioY = Math.floor(Math.random() * (maxY - 100) + 100);
+
+  if (aleatorioX > 0 && aleatorioX < larguraJanela && aleatorioY > 0 && aleatorioY < alturaJanela) {
+    botaoNao.style.left = aleatorioX + "px";
+    botaoNao.style.top = aleatorioY + "px";
+  }
+}
+</script>
+
+    <script>
+        function handleYesClick() {
+            // Apresenta uma mensagem de amor com uma citação do Homem-Aranha
+            alert("Eu te amo mais do que tudo no mundo! Com grandes poderes vêm grandes responsabilidades.");
+        }
+    </script>
+
+
+    </body>
+</html>

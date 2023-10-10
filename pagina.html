@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style2.css">
+
+    <title>Login Amor</title>
+</head>
+
+<body>
+    <div class="login">
+        <img src="img/spider-man-.jpg" alt="image" class="login__bg">
+
+        <form action="" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input type="id" placeholder="Usuário" required class="login__input"
+                        oninvalid="this.setCustomValidity('Por favor, preencha este campo')" oninput="this.setCustomValidity('')">
+                    <i class="ri-mail-fill"></i>
+                </div>
+
+                <div class="login__box">
+                    <input type="password" placeholder="Senha" required class="login__input"
+                    oninvalid="this.setCustomValidity('Por favor, preencha este campo')" oninput="this.setCustomValidity('')">
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+            </div>
+
+            <div class="login__check">
+                <div class="login__check-box">
+                    <input type="checkbox" class="login__check-input" id="user-check">
+                    <label for="user-check" class="login__check-label">Lembrar de mim</label>
+                </div>
+
+                <a href="#" class="login__forgot">Esqueceu senha?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+                Não tem uma conta? <a href="#">Cadastre</a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

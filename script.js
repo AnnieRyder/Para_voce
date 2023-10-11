@@ -1,5 +1,8 @@
 var usuarios = [
-    {username: 'Melinda', password: 'teamo'}
+    {username: 'Carol', password: 'teamo'},
+    {username: 'Talia', password: 'teamo' },
+    {username: 'Melinda', password: 'teamo'},
+    {username: 'a', password: 'a'}
 ];
 
 document.querySelector('.login__form').addEventListener('submit', function(event) {

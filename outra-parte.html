@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <style>
+        video {
+            justify-content: center;
+            align-items: center;
+            margin-top: 40%;
+            width: 100%;
+            height: auto;
+            max-height: 980px;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <video id="myVideo" controls muted autoplay>
+        <source src="img/slaoq.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        var vid = document.getElementById("myVideo");
+        vid.onended = function () {
+            alert("Eu te amo caramba!");
+              window.location.href = "last-parte.html";
+        };
+
+    </script>
+</body>
+
+</html>
